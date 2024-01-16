@@ -151,32 +151,112 @@
   line-height: 36px; /* 150% */
 }
 
+/* <!-- Newslatter section --> */
+
+.newslatter-container {
+  margin: 100px 130px;
+  display: flex;
+  gap: 24px;
+}
+
+.newslatter-content {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 30px;
+  height: 100%;
+}
+.newslatter-content h1 {
+  margin-bottom: 16px;
+}
+.newslatter-content p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.newslatter-content hr {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.newslatter-content input {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  width: 280px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  padding: 16px;
+  padding-left: 20px;
+  border: 0px;
+}
+.newslatter-content button {
+  margin-top: 4px;
+  width: 100%;
+}
+
+.newslatter-img .stamp {
+  border-radius: 16px;
+  background: #ff5400;
+  width: 250px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  bottom: 200px;
+  left: 350px;
+  transform: rotate(-30deg);
+}
+
+.stamp h2 {
+  margin: 0px;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 400;
+}
+.stamp h1 {
+  margin: 0px;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+}
+
 /* Responsive media query section */
 /* For mobile devices */
 @media screen and (max-width: 600px) {
   .tours-container,
   .cards-section-1,
-  .perfect-place-container {
+  .perfect-place-container,
+  .newslatter-container {
     flex-direction: column;
   }
   .tours-container,
   .why-choose-container,
-  .perfect-place-container {
+  .perfect-place-container,
+  .newslatter-container {
     margin: 20px;
   }
   .tours-img img,
   .why-choose-container .why-choose-content,
   .why-choose-cards .Cards,
-  .perfect-place-img img {
+  .perfect-place-img img,
+  .newslatter-img img,
+  .newslatter-content input {
     width: 100%;
   }
+
   .why-choose-content p,
   .perfect-place-content h1,
   .perfect-place-content p,
-  .perfect-place-content > ul li {
+  .perfect-place-content > ul li,
+  .newslatter-content {
     width: auto;
   }
   .perfect-place-img h2 {
     display: none;
+  }
+  .newslatter-img .stamp {
+    display: none;
+  }
+  .newslatter-content input {
+    padding-left: 5px;
   }
 }
