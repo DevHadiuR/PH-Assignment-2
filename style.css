@@ -49,3 +49,20 @@
   margin-top: 0px;
   margin-bottom: 15px;
 }
+
+
+
+/* Responsive media query section */
+/* For mobile devices */
+@media screen and (max-width:600px) {
+  .tours-container{
+    flex-direction: column;
+  }
+  .tours-container{
+    margin: 20px;
+  }
+  .tours-img img{
+    width: 100%;
+  }
+  
+}
