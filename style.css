@@ -54,89 +54,129 @@
 
 /* <!-- Why choose us secion --> */
 
-
-.why-choose-container{
+.why-choose-container {
   margin: 100px 130px;
 }
-.why-choose-content{
+.why-choose-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.why-choose-content h1{
+.why-choose-content h1 {
   margin-bottom: 18px;
 }
-.why-choose-content p{
+.why-choose-content p {
   width: 500px;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 40px;
 }
-.why-choose-cards .cards-section-1{
+.why-choose-cards .cards-section-1 {
   display: flex;
   gap: 24px;
-
 }
 
-.why-choose-cards .cards-section-2{
-display: flex;
-justify-content: center;
-margin-top: 24px;
-
+.why-choose-cards .cards-section-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
 }
-.why-choose-cards .cards{
+.why-choose-cards .cards {
   max-width: 500px;
   border-radius: 16px;
   padding: 30px 50px 30px 30px;
 }
 
-.cards img{
+.cards img {
   margin-bottom: 25px;
 }
-.cards h2{
+.cards h2 {
   font-size: 24px;
-margin-top: 0px;
-margin-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
-.cards p{
-margin-top: 0px;
+.cards p {
+  margin-top: 0px;
 }
 
-#choose-card-1{
-
-  border: 1px solid rgba(251, 181, 99, 0.20);
+#choose-card-1 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
   background: rgba(251, 181, 99, 0.05);
 }
-#choose-card-2{
-  border: 1px solid rgba(41, 206, 246, 0.20);
+#choose-card-2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
   background: rgba(41, 206, 246, 0.05);
-
 }
-#choose-card-3{
-  border: 1px solid rgba(233, 68, 68, 0.20);
+#choose-card-3 {
+  border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
-
 }
 
+/* <!-- Discount section --> */
 
+/* <!-- Perfect place section --> */
+.perfect-place-container {
+  margin: 100px 130px;
+  display: flex;
+  gap: 30px;
+}
 
-
-
-
+.perfect-place-content h1 {
+  margin-bottom: 24px;
+}
+.perfect-place-content p {
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+.perfect-place-content > ul li {
+  margin-top: 0px;
+  color: #131318;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 16px;
+}
+.perfect-place-img h2 {
+  width: 300px;
+  text-align: center;
+  position: relative;
+  bottom: 280px;
+  left: 155px;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px; /* 150% */
+}
 
 /* Responsive media query section */
 /* For mobile devices */
 @media screen and (max-width: 600px) {
-  .tours-container , .cards-section-1 {
+  .tours-container,
+  .cards-section-1,
+  .perfect-place-container {
     flex-direction: column;
   }
-  .tours-container , .why-choose-container {
+  .tours-container,
+  .why-choose-container,
+  .perfect-place-container {
     margin: 20px;
   }
-  .tours-img img , .why-choose-container .why-choose-content , .why-choose-cards .Cards  {
+  .tours-img img,
+  .why-choose-container .why-choose-content,
+  .why-choose-cards .Cards,
+  .perfect-place-img img {
     width: 100%;
   }
-  .why-choose-content p{
+  .why-choose-content p,
+  .perfect-place-content h1,
+  .perfect-place-content p,
+  .perfect-place-content > ul li {
     width: auto;
+  }
+  .perfect-place-img h2 {
+    display: none;
   }
 }
