@@ -393,7 +393,7 @@ nav .nav-links a {
 .newslatter-container {
   margin: 6.25rem 8.125rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .newslatter-content {
@@ -431,12 +431,12 @@ nav .nav-links a {
 .newslatter-img .stamp {
   border-radius: 1rem;
   background: #ff5400;
-  width: 23.125rem;
-  padding: 1.875rem;
+  width: 300px;
+  padding: 30px;
   text-align: center;
   position: relative;
-  bottom: 12.5rem;
-  left: 33.125rem;
+  bottom: 210px;
+  left: 310px;
   transform: rotate(-30deg);
 }
 
@@ -444,14 +444,14 @@ nav .nav-links a {
   margin: 0px;
   color: #fff;
   font-family: Mulish;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 400;
 }
 .stamp h1 {
   margin: 0px;
   color: #fff;
   font-family: Mulish;
-  font-size: 2rem;
+  font-size: 32px;
   font-style: normal;
   font-weight: 800;
 }
