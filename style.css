@@ -67,7 +67,7 @@ nav .nav-links a {
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%
     ),
-    url(resources/B9A2-Hero-Travel/Images/Group\13\ \(1\)\ \(1\).png);
+    url(resources/B9A2-Hero-Travel/Images/Group\ 13.png);
 
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ nav .nav-links a {
   justify-content: space-between;
   gap: 10px;
 }
-.banner-input input {
+.banner-input select {
   border-radius: 8px;
   background: #fff;
   color: rgba(19, 19, 24, 0.5);
@@ -142,6 +142,56 @@ nav .nav-links a {
 }
 
 /* <!-- Destination section --> */
+
+.destination-container {
+  margin: 100px 130px;
+}
+.destination-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.destination-content h1 {
+  margin-bottom: 20px;
+}
+.destination-content p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.destination-img {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 24px;
+}
+.destination-img-1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 24px;
+}
+.destination-img-2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 24px;
+}
+.destination-img-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 24px;
+}
+
+.destination-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
 
 /* <!-- Why choose us secion --> */
 
@@ -358,7 +408,8 @@ footer {
   .why-choose-container,
   .perfect-place-container,
   .newslatter-container,
-  .header-container {
+  .header-container,
+  .destination-container {
     margin: 20px;
   }
   .tours-img img,
@@ -402,7 +453,7 @@ footer {
     flex-direction: column;
     width: 100%;
   }
-  .banner-input input {
+  .banner-input select {
     width: auto;
   }
 
@@ -413,5 +464,13 @@ footer {
   }
   .banner-content p {
     margin-bottom: 20px;
+  }
+  .destination-img,
+  .destination-img-1,
+  .destination-img-2,
+  .destination-img-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }
